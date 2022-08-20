@@ -33,13 +33,13 @@ export const login = async (req, res, next) => {
 
     const token = jwt.sign(
       { id: user._id, isAdmin: user.isAdmin },
-      process.env.JWT_SECRET
+      process.env.JWT_SECRET,
+      { expiresIn: "1d" }
     );
 
     const { password, isAdmin, ...otherDetails } = user._doc;
 
     return res
-      .cookie("access_token", token)
       .status(200)
       .json({ details: { ...otherDetails }, isAdmin, token });
   } catch (error) {
