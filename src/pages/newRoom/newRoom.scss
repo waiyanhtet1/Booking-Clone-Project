@@ -1,0 +1,86 @@
+.new {
+    display: flex;
+
+    .newContainer {
+        flex: 6;
+
+        .top,
+        .bottom {
+            display: flex;
+            padding: 20px;
+            box-shadow: 11px 5px 24px 3px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 11px 5px 24px 3px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 11px 5px 24px 3px rgba(0, 0, 0, 0.15);
+            margin: 20px;
+
+            h1 {
+                color: lightgray;
+                font-size: 20px;
+            }
+
+            .left {
+                flex: 1;
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            .right {
+                flex: 2;
+                padding: 0px 30px;
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    justify-content: space-between;
+
+                    .formInput {
+                        width: 40%;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+
+                        input {
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            outline: none;
+                            border-bottom: 1px solid gray;
+                        }
+                    }
+
+                    .selectRooms {
+                        width: 100%;
+
+                        select {
+                            width: 100%;
+                            padding: 10px;
+                        }
+                    }
+
+                    button {
+                        width: 150px;
+                        background-color: teal;
+                        color: #fff;
+                        border: none;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.widget {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 11px 5px 24px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 11px 5px 24px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 11px 5px 24px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    height: 100px;
+
+    .left,
+    .right {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .totallodgings {
+            font-size: 13px;
+            color: gray;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+            color: rgba(160, 160, 160);
+        }
+
+        .counter {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+
+
+        .percentage {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            font-size: 14px;
+
+            &.positive {
+                color: green
+            }
+
+            &.negative {
+                color: red;
+            }
+        }
+
+        .icon {
+
+            padding: 10px 0px;
+            // background-color: rgba(128, 0, 128, 0.342);
+            border-radius: 15px;
+            // align-self: flex-end;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

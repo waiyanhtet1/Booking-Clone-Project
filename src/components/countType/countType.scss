@@ -1,0 +1,19 @@
+.summary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tableType {
+        width: 100%;
+        padding: 0px 50px;
+
+        tr {
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+        }
+    }
+}
