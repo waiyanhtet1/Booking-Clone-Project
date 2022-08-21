@@ -1,0 +1,73 @@
+.register {
+  width: 100%;
+  height: 100vh;
+  background-color: #003580;
+  color: #fff;
+}
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+form > .formControl {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form > .formControl > input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+form > .formControl > .errorMessage {
+  color: rgb(241, 137, 158);
+}
+
+form > button {
+  padding: 20px 40px;
+  background-color: #0071c2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form > button:hover {
+  background-color: #0071c262;
+}
+
+@media screen and (max-width: 700px) {
+  .error {
+    height: 165vh;
+  }
+  .registerContainer {
+    padding-top: 20px;
+  }
+  form {
+    width: 350px;
+  }
+  form > .formControl {
+    width: 90%;
+  }
+  form > .formControl > input {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+}

@@ -1,0 +1,64 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #003580;
+}
+
+.lContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+.lContainer > h1 {
+  margin-bottom: 30px;
+}
+
+.lContainer > .lInput {
+  width: 20%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.lContainer > .lButton {
+  border: none;
+  height: 50px;
+  padding: 10px 40px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.lContainer > .lButton:hover {
+  background-color: #0071c262;
+}
+
+.lContainer > .lButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+.lContainer > .errorMessage {
+  color: crimson;
+}
+
+@media screen and (max-width: 700px) {
+  .lContainer > .lInput {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .lContainer > .lInput {
+    width: 70%;
+  }
+}
